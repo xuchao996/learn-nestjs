@@ -3,6 +3,10 @@ import {Request, Response} from "express"
 @Controller('dogs')
 export class DogsController {
     @Get()
+    test():string {
+        return "test"
+    }
+    @Get()
     findAll(@Res() res: Response,@Req() req: Request) {
         console.info("res", req)
         res.status(HttpStatus.CREATED).send();

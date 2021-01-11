@@ -15,4 +15,7 @@ describe('DogsController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+  it('show test', () => {
+    expect(controller.test()).toEqual('test')
+  })
 });
